@@ -8,7 +8,6 @@ function Search(){
                 <button 
                     className = "searchButton" 
                     type="submit"
-                    onClick=""
                     >Search
                 </button>
             </form>
