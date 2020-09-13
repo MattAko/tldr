@@ -5,7 +5,7 @@ import TrendItem from './TrendItem.js'
 export class Trending extends Component {
     render() {
         return this.props.trending.map((trend) => (
-            <TrendItem key = {trend.id} trend={trend}/>
+            <TrendItem key = {trend.id} trend={trend} search={this.props.search}/>
         ));
     }
 }

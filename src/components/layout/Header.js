@@ -4,20 +4,19 @@ import '../../App.css';
 function Header(){
     return(
         <header style = {headerStyle}>
-            <h1>The TLDR </h1>
-            <h2 style = {{fontStyle: 'italic'}}>We find the info so you don't have to!</h2>
-            
+            <h1>the tl;dr</h1>
         </header>
-
     )
 }
 
 const headerStyle = {
     background: '#eee',
-    textAlign: 'center',
-    margin: '0px',
-    padding: '10px 0px',
-    color: 'black'
+    textAlign: 'left',
+    color: 'black',
+    fontSize: '40px',
+    fontFamily: 'transat bold',
+    display: 'flex',
+    alignSelf: "flex-end"
 }
 
 export default Header;

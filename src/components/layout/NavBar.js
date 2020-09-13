@@ -4,8 +4,8 @@ import React from 'react'
 function NavBar(){
     return(
         <nav> 
-            <button type="button">Home</button>
-            <button type="button">About Us</button>
+            <button type="button">the tl;dr</button>
+            <button type="button">about us</button>
         </nav>
     )
 }

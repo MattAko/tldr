@@ -29,16 +29,24 @@ class App extends Component {
     ]
   }
 
+  search = (title) => {
+    console.log(title);
+  }
   render() {
     return (
       <div className="App">
         <NavBar/>
-        <Header/>
-        <Search/>
-        <h2>Today's Top Trending</h2>
-        <div className = "Row">
-          <Trending trending={this.state.trending}/>
+        <div className = "container">
+          <div className = "Row">
+            <h2 style={{fontStyle: 'italic', letterSpacing: '2px'}}>trending</h2>
+          </div>
+          <div className = "Row">
+            <Trending trending={this.state.trending} search={this.search}/>
+          </div>
         </div>
+        
+        <Search/>
+        
         
       </div>
     );

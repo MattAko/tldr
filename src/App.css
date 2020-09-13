@@ -1,45 +1,66 @@
+@font-face{
+    font-family: "transat bold";
+    src: url("./assets/fonts/transat_bold-webfont.ttf")
+}
+
+@font-face{
+    font-family: "transat";
+    src: url("./assets/fonts/transat_medium-webfont.ttf")
+}
+
 body{
-    background: #2a2a2a;
-    color: white
+    background: #0c0c0c;
+    color: white;
+    font-family: "transat bold";
 }
 
 button{
-    background: #2a2a2a;
+    background: #202020;
     color: white;
     border: none;
     font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "transat bold";
     padding: 15px 20px;
 }
 
 button:hover{
     background: white;
-    color: #2a2a2a;
+    color: #202020;
+    cursor: pointer;
 }
 
 nav{
-    width: 100%;
-    background: #2a2a2a;
+    padding-left: 25px;
+    width: auto;
+    background: #202020;
+    border-bottom: 1px solid #656565;
 }
 
 .searchButton{
     padding: 5px 15px;
     font-size: 16px;
     border-radius: 5px;
-    border: solid 1px white;
-    border-radius: 1px;
+    border: solid 1px #656565;
+    border-radius: 4px;
+    float: right;
+    text-transform: uppercase;
 }
 
 .searchButton:hover{
     background: #2a2a2a;
     color: white;
-    text-decoration: underline;
+    text-decoration: underline; 
+}
+
+h1{
+    padding: 20px;
+    margin: 0px;
 }
 
 input{
     height: 28px;
     margin-right: 10px;
-    border: 1px solid #bdbdbd;
+    border: 1px solid #656565;
     width: 400px;
     background: #474747;
     color: white;
@@ -49,7 +70,6 @@ input{
 .Search{
     text-align: center;
     margin: 20px;
-    
 }
 
 form{
@@ -60,10 +80,33 @@ form{
 
 h2{
     text-align: center;
+    font-family: "transat bold";
+    font-size: 30px;
 }
 
 .Row{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0px 10%;
+}
+
+.card{
+    font-size: 20px;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.card:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+.container{
+    margin: 20px 5%;
+    background: #2a2a2a;
+    border: solid 1px #656565;
+    border-radius: 5px;
 }
