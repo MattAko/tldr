@@ -25,7 +25,7 @@ export class TrendItem extends Component {
     render() {
         const {title, bg} = this.props.trend
         return (
-            <div onClick = {this.props.search.bind(this, title)} className = "card" style = {this.getStyle(bg)}>
+            <div onClick={this.props.search.bind(this, title)} className="card" style={this.getStyle(bg)}>
                 {title}
             </div>
         )
